@@ -11,13 +11,6 @@ public class WeatherForecastController : ControllerBase
         "Bear", "Marcus", "Lucas", "Mathias", "Dasha", "Julia", "Johannes", "Omid", "Ahsan", "david"
     };
 
-    private readonly ILogger<WeatherForecastController> _logger;
-
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
-    {
-        _logger = logger;
-    }
-
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
